@@ -37,11 +37,12 @@
 </head>
 <body>
     <!-- ==================== header -->
-    <header id="header" class="w-full min-h-screen">
+    <header id="header" class="w-full min-h-[100vh] bg-gradient-to-b from-[#f3f3f3] to to-transparent">
         <div class="container mx-auto px-5">
-            <div class="w-full flex items-center justify-between py-8">
+            <!-- ============= navbar section -->
+            <div class="w-full flex items-center justify-between py-8 md:py-10 xl:py-[56px]">
                 <!-- ============== logo -->
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 pointer-events-none">
                     <div class="w-8 h-8 bg-[#ABEF5F] rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -84,10 +85,34 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-12 h-12 bg-white py-[10px] px-[10px] rounded-full border-2 border-[#E9E9E9] flex items-center justify-center hover:bg-[#f0f0f0] transition duration-300 ease-in-out cursor-pointer">
+                    <div class="w-12 h-12 bg-white py-[10px] px-[10px] rounded-full border-2 border-[#E9E9E9] flex items-center justify-center hover:bg-[#f0f0f0] transition duration-300 ease-in-out cursor-pointer xl:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>                      
+                    </div>
+                </div>
+            </div>
+            <!-- ============= home section -->
+            <div class="w-full min-h-[600px] md:min-h-[800px] mb-[40px] mt-7 flex items-center justify-center flex-col md:mt-[8px] lg:mt-0 xl:mt-[10px]">
+                <div class="w-[260px] h-[160px] mb-[25px] md:w-[424px] md:h-[260px] lg:w-[570px] lg:h-[350px] lg:mb-6">
+                    <img src="./assets/all-img/bg-img/banner.png" alt="" class="w-full">
+                </div>
+                <div class="w-full text-center flex items-center justify-center flex-col">
+                    <div class="w-full md:w-[610px] lg:w-[1085px] lg:max-w-full text-center flex items-center justify-center flex-col">
+                        <h1 class="text-[28px] leading-8 font-extrabold font-manrope text-[#212121] mb-[25px] md:text-[36px] md:leading-[50px] lg:text-[64px] lg:leading-[87px] lg:mb-6">A barn house of this design  has a striking appearance</h1>
+                        <div class="lg:w-[972px]">
+                            <p class="text-sm leading-6 font-medium font-manrope text-[#494949] md:text-base md:leading-[26px] ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                        </div>
+                    </div>
+                    <div class="w-full mt-[30px] flex items-center justify-center">
+                        <button class="w-full md:w-[206px] py-[15px] bg-[#ABEF5F80] rounded-full border border-[#ABEF5F] flex items-center justify-center gap-[7px] hover:bg-[#c4f58b] transition duration-300 ease-in-out text-xl leading-[27px] font-manrope font-bold text-[#212121]">
+                            View Details
+                            <div class="w-8 h-8 rounded-full text-black bg-[#ABEF5F] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>                                  
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
